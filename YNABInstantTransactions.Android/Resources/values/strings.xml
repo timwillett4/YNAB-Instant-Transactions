@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YNABInstantTransactions</string>
+    <string name="action_settings">Settings</string>
+    <string name="transaction_details_placeholder_text">Transaction Details</string>
+    <string name="add_transaction_button_text">Add To YNAB Budget</string>
+    <string name="spinner_prompt_text">Select Category</string>
+</resources>
