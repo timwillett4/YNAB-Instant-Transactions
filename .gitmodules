@@ -1,0 +1,3 @@
+[submodule "SubModules/FSharp.Core.Extensions"]
+	path = SubModules/FSharp.Core.Extensions
+	url = https://github.com/timwillett4/FSharp.Core.Extensions
