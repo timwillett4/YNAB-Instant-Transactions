@@ -1,3 +1,6 @@
 [submodule "SubModules/FSharp.Core.Extensions"]
 	path = SubModules/FSharp.Core.Extensions
 	url = https://github.com/timwillett4/FSharp.Core.Extensions
+[submodule "SubModules/YNABAPI.FSharp"]
+	path = SubModules/YNABAPI.FSharp
+	url = https://github.com/timwillett4/YNABAPI.FSharp

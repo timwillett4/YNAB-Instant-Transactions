@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YNABInstantTransactions.Android", "YNABInstantTransactions.Android\YNABInstantTransactions.Android.csproj", "{7E62804A-40E5-4D70-97BE-2C789FB1531D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{72DCEDE7-D7B1-44BD-B60A-0E566812F4D2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Submodules", "Submodules", "{EF25FDDE-2736-4D38-B87B-CAC17617EFD6}"
-EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "YNABInstantTransactions.Presentation", "YNABInstantTransactions.Presentation\YNABInstantTransactions.Presentation.fsproj", "{DB92C4F8-B6CF-45B3-A112-75D0A4A5721E}"
-EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "YNABInstantTransaction.Tests", "YNABInstantTransaction.Tests\YNABInstantTransaction.Tests.fsproj", "{52EF9E7A-A3A8-49F8-BBBB-8054178EE09F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{EF25FDDE-2736-4D38-B87B-CAC17617EFD6}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharp.Core.Extensions", "SubModules\FSharp.Core.Extensions\FSharp.Core.Extensions.fsproj", "{9FD56318-5A7B-4C1E-9F94-AE07B5CCCCB4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "YNABInstantTransaction.Application", "YNABInstantTransaction.Application\YNABInstantTransaction.Application.fsproj", "{96823A49-98DA-4C70-B50B-FDA6DC91B928}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "YNABInstantTransactions.Android", "YNABInstantTransactions.Android\YNABInstantTransactions.Android.fsproj", "{9AAECE2E-48BF-4BE8-B498-F5EB01823A24}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "YNABInstantTransactions.Application", "YNABInstantTransactions.Application\YNABInstantTransactions.Application.fsproj", "{2709A13C-BF5A-43BF-9653-1CCBDF5FBBA6}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "YNABInstantTransactions.Application.Tests", "Tests\YNABInstantTransactions.Application.Tests\YNABInstantTransactions.Application.Tests.fsproj", "{524794B9-A609-4246-B70E-611DEE86FEB0}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "YNABApi.FSharp", "SubModules\YNABAPI.FSharp\YNABApi.FSharp\YNABApi.FSharp.fsproj", "{0D506C9C-C2D0-4702-A7C8-FE6B90F3888E}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "YNABApi.FSharp.Tests", "SubModules\YNABAPI.FSharp\YNABApi.Tests\YNABApi.FSharp.Tests.fsproj", "{261235D4-792B-4FDC-863A-D3AB3836CFD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,35 +25,41 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7E62804A-40E5-4D70-97BE-2C789FB1531D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E62804A-40E5-4D70-97BE-2C789FB1531D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E62804A-40E5-4D70-97BE-2C789FB1531D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{7E62804A-40E5-4D70-97BE-2C789FB1531D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E62804A-40E5-4D70-97BE-2C789FB1531D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E62804A-40E5-4D70-97BE-2C789FB1531D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{DB92C4F8-B6CF-45B3-A112-75D0A4A5721E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB92C4F8-B6CF-45B3-A112-75D0A4A5721E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB92C4F8-B6CF-45B3-A112-75D0A4A5721E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB92C4F8-B6CF-45B3-A112-75D0A4A5721E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52EF9E7A-A3A8-49F8-BBBB-8054178EE09F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52EF9E7A-A3A8-49F8-BBBB-8054178EE09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52EF9E7A-A3A8-49F8-BBBB-8054178EE09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52EF9E7A-A3A8-49F8-BBBB-8054178EE09F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9FD56318-5A7B-4C1E-9F94-AE07B5CCCCB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9FD56318-5A7B-4C1E-9F94-AE07B5CCCCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FD56318-5A7B-4C1E-9F94-AE07B5CCCCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FD56318-5A7B-4C1E-9F94-AE07B5CCCCB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96823A49-98DA-4C70-B50B-FDA6DC91B928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96823A49-98DA-4C70-B50B-FDA6DC91B928}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96823A49-98DA-4C70-B50B-FDA6DC91B928}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96823A49-98DA-4C70-B50B-FDA6DC91B928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AAECE2E-48BF-4BE8-B498-F5EB01823A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AAECE2E-48BF-4BE8-B498-F5EB01823A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AAECE2E-48BF-4BE8-B498-F5EB01823A24}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9AAECE2E-48BF-4BE8-B498-F5EB01823A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AAECE2E-48BF-4BE8-B498-F5EB01823A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AAECE2E-48BF-4BE8-B498-F5EB01823A24}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2709A13C-BF5A-43BF-9653-1CCBDF5FBBA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2709A13C-BF5A-43BF-9653-1CCBDF5FBBA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2709A13C-BF5A-43BF-9653-1CCBDF5FBBA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2709A13C-BF5A-43BF-9653-1CCBDF5FBBA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{524794B9-A609-4246-B70E-611DEE86FEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{524794B9-A609-4246-B70E-611DEE86FEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{524794B9-A609-4246-B70E-611DEE86FEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{524794B9-A609-4246-B70E-611DEE86FEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D506C9C-C2D0-4702-A7C8-FE6B90F3888E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D506C9C-C2D0-4702-A7C8-FE6B90F3888E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D506C9C-C2D0-4702-A7C8-FE6B90F3888E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D506C9C-C2D0-4702-A7C8-FE6B90F3888E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261235D4-792B-4FDC-863A-D3AB3836CFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261235D4-792B-4FDC-863A-D3AB3836CFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261235D4-792B-4FDC-863A-D3AB3836CFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261235D4-792B-4FDC-863A-D3AB3836CFD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{52EF9E7A-A3A8-49F8-BBBB-8054178EE09F} = {72DCEDE7-D7B1-44BD-B60A-0E566812F4D2}
 		{9FD56318-5A7B-4C1E-9F94-AE07B5CCCCB4} = {EF25FDDE-2736-4D38-B87B-CAC17617EFD6}
+		{524794B9-A609-4246-B70E-611DEE86FEB0} = {72DCEDE7-D7B1-44BD-B60A-0E566812F4D2}
+		{0D506C9C-C2D0-4702-A7C8-FE6B90F3888E} = {EF25FDDE-2736-4D38-B87B-CAC17617EFD6}
+		{261235D4-792B-4FDC-863A-D3AB3836CFD4} = {72DCEDE7-D7B1-44BD-B60A-0E566812F4D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF653F7F-D9B2-4A81-A0DA-2C65F6501B03}

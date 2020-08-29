@@ -21,6 +21,7 @@
             android:textColor="@color/textColor"
             android:text="@string/transaction_details_placeholder_text"
             android:id="@+id/transaction_detail_textview"
+            android:editable="false"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="4dp" />
         <Spinner
